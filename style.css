@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,300;1,500&display=swap');
 *{
     margin:0;
     padding:0;
@@ -36,9 +35,9 @@ body{
     position: relative;
 }
 .leo{
-    width:25vw;
-    height:40vh;
-    margin:2vh 0 0 2vw;
+    width:27vw;
+    height:50vh;
+    margin:15vh 0 0 0.5vw;
     border:5px solid white;
     border-radius:15px;
 }
@@ -55,42 +54,65 @@ h3{
     text-align: center;
     font-size: 1.4rem;
     margin:0 0.5vw 0 0.5vw;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', monospace;
     font-weight: 500, italic;
 }
-p{
+.line{
     color:black;
     width:90%;
     font-size:1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
     margin:0 0.5vw 0.5vh 0.5vw;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', monospace;
+    
+    overflow: hidden;
+    border-right:2px solid black;
+}
+.type-animation{
+    animation:cursor 500ms steps(28) infinite normal,
+    type 4s steps(28) 1s normal both;
+}
+@keyframes type{
+    from{
+        width:0;
+    }
+    to{
+        width:98%;
+    }
+}
+@keyframes cursor{
+    from{
+        border-right-color:black;
+    }
+    to{
+        border-right-color:transparent;
+    }
 }
 .curios1{
     width:50vw;
     position: absolute;
-    top:13vh;
+    top:15vh;
     left:28vw;
-    background-color:#F700AE;
+    background-color:#eef1ba;
 }
 .curios2{
     width:50vw;
     position: absolute;
-    top:35vh;
+    top:38vh;
     left:28vw;
-    background-color:#04CDEA;
+    background-color:#eef1ba;
 }
 .curios3{
     width:76vw;
-    background-color:#3FD994;
+    background-color:#eef1ba;
     position: absolute;
-    top:73vh;
+    top:75vh;
     left:2vw;
 }
 .curios4{
     width:76vw;
-    background-color:#EBD534;
+    background-color:#eef1ba;
     position: absolute;
     top:95vh;
     left:2vw;
